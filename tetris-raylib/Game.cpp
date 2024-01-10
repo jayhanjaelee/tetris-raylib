@@ -4,7 +4,7 @@
 
 Game::Game(int width, int height, std::string title)
 {
-    assert(GetWindowHandle()); // If assertion triggers : Window is already opened.
+    assert(!GetWindowHandle()); // If assertion triggers : Window is already opened.
     InitWindow(width, height, title.c_str());
 }
 
